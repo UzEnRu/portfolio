@@ -1,0 +1,317 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+}
+
+/* ============================= */
+/* Responsive for tablets < 768px */
+@media screen and (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-containers,
+  .experience-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-container,
+  .project-img {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* ============================= */
+/* Responsive for phones < 480px */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .profile-pic,
+  .about-pic {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .project-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Telefonda profile-pic doimo yumaloq bo‘lishi uchun */
+@media screen and (max-width: 480px) {
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  /* logo ni yashirish */
+  #hamburger-nav .logo {
+    display: none;
+  }
+
+  /* hamburger-icon to‘liq ko‘rinsin */
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .hamburger-icon span {
+    background-color: #000;
+    height: 3px;
+    width: 25px;
+    display: block;
+    border-radius: 2px;
+  }
+}
+
+/* Default: menyu yashiringan holatda */
+.menu-links {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+/* toggleMenu() chaqirilganda menyuni ochish uchun */
+.menu-links.active {
+  display: flex;
+}
+@media screen and (max-width: 480px) {
+  /* Telefon ekranda rasm yumaloq bo'lishi uchun */
+  #portfolio-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: fixed; /* Ekranga nisbatan joylashadi */
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+    width: fit-content;
+    min-width: 200px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-links.active {
+    display: flex;
+  }
+
+  .menu-links li {
+    list-style: none;
+  }
+
+  .menu-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+
+/* Kompyuterda rasm ko‘rinadi, telefonda yo‘qoladi */
+@media screen and (max-width: 768px) {
+ img.about-pic  {
+    display: none;
+  }
+
+   #section_about_pic {
+    display: none;
+  }
+
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .about-details-container {
+    gap: 1rem; /* Bo‘shliqni kichikroq qilish */
+    padding: 0 1rem;
+  }
+
+  .about-containers {
+    margin-bottom: 0.5rem;
+  }
+
+  .text-container {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.85rem;
+    color: #999;
+    line-height: 1.3;
+    height: auto;
+  }
+
+  footer p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
