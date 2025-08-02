@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgb(34, 31, 31);
 }
 
 html {
@@ -217,6 +218,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: white;
 }
 
 #socials-container {
@@ -271,6 +273,7 @@ section {
 
 .btn-color-2 {
   background: none;
+  color: white;
 }
 
 .btn-color-2:hover {
