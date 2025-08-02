@@ -408,6 +408,35 @@ section {
 #projects {
   position: relative;
 }
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.details-container {
+  flex: 1 1 300px;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.details-container:hover {
+  transform: translateY(-5px);
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
 
 .color-container {
   border-color: rgb(163, 163, 163);
